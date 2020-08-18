@@ -27,6 +27,7 @@ public class ServletLifeCycle extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("doGet()");
 		response.getWriter().append(request.getContextPath());
+		response.getWriter().append("Github edit").append("Served at: ").append(request.getContextPath());
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
